@@ -1,93 +1,109 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: 100vh;
-   /* background: url('gold.jpg')no-repeat; */
-   background-image: url('gold.jpg');
-   background-image: url('C:\Users\Mühendis\Desktop\web Prejesi\foto\gold.jpg');
-  
+    background-size: 100% 100%;
+    background-image: url("foto/mor.jpeg");
 
-   background-size: cover;
-   background-position: center;
+
+    background-size: cover;
+    background-position: center;
 }
-.wrapper{
+
+.wrapper {
     width: 420px;
-    background:#A0A0A0;
-    color:#fff;
+    background: #A0A0A0;
+    color: #fff;
     border-radius: 8px;
     padding: 30px 40px;
 }
-.wrapper h1{
+
+.wrapper h1 {
     font-size: 40px;
     text-align: center;
 }
-.wrapper .input_box{
+
+.wrapper .input_box {
     width: 200;
     height: 100;
     margin: 30px;
+  
+
+
 }
+
 .input_box input {
     width: 200;
     height: 100;
-    background:#f3e7f3;
+
+    background: #f3e7f3;
     border: none;
-    outline:none;
-    border: 3px solid rbba(255,255,255,2);
-   border-radius: 35px;    
-   font-size: 15px;
-   color: black;
-    padding: 15px 45px 15px 20px; 
+    outline: none;
+    border: 3px solid rbba(255, 255, 255, 2);
+    border-radius: 35px;
+    font-size: 15px;
+    color: black;
+    padding: 15px 45px 15px 20px;
 }
-.input_box input::placeholder{
-    color:black;
-}
-.input_box i{
-   
+
+.input_box input::placeholder {
     color: black;
 }
-.wrapper .remember_forget{
+
+.input_box i {
+
+    color: black;
+}
+
+.wrapper .remember_forget {
     display: flex;
     justify-content: space-between;
     margin: -15px 0 15px;
 }
-.remember_forget a{
+
+.remember_forget a {
     text-decoration: none;
 }
-.remember_forget a:hover{
-    text-decoration:underline;
+
+.remember_forget a:hover {
+    text-decoration: underline;
     color: red;
 }
-.wrapper .button{
+
+.wrapper .button {
     width: 100%;
     height: 45px;
     background: #f3e7f3;
     border: none;
     outline: none;
     border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0 ,0 ,0,1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     cursor: pointer;
     font-size: 16px;
-    color:#333;
+    color: #333;
     font-weight: 600;
 }
-.wrapper .register{
+
+.wrapper .register {
     font-size: 15px;
-     text-align: center; 
-     margin-top: 15px; 
-     margin: 20px 0 15px;
+    text-align: center;
+    margin-top: 15px;
+    margin: 20px 0 15px;
 }
-.register p a{
+
+.register p a {
     text-decoration: none;
 }
-.register p a:hover{
+
+.register p a:hover {
     text-decoration: underline;
     color: red;
 }
- 
