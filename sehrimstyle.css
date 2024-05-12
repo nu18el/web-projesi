@@ -84,7 +84,7 @@
     position: relative;
     width:80%;
     height: 400px;
-    border:1px solid #ccc;
+    border:none;
     margin: auto;
     overflow: hidden;
 }
@@ -124,12 +124,12 @@
     60% {
         transform: translateX(-3000px);
     }
-    70% {
+    /* 70% {
         transform: translateX(-4000px);
     }
     80% {
         transform: translateX(-4000px);
-    }
+    } */
 }
 .sehir1 h3{
     text-align:center;
@@ -153,4 +153,14 @@
 
     text-align: center;
     margin-right: 50px;
+}
+.bayrak{
+   margin-top: 200px;
+   margin-bottom: 20px;
+   width: 50%;
+   margin-left: 200px;
+}
+.bayrak .bayrakfoto a img{
+    width: 300px;
+    height: 300px;
 }
