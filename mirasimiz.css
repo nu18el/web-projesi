@@ -2,10 +2,16 @@
     margin: 0;
     padding: 0;
 }
+.bgrd{
+    background-color: white;
+    /* height: 40%;
+    width: 100%; */
+}
 .container{
-    background: url("foto/sam1.jpeg ");
-     height: 100vh; 
-    background-size: 100% 100%;
+    background-color: aqua;
+    margin-top: 600px;
+    
+
 }
 .container .navbar{
     width: 100%;

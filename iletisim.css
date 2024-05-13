@@ -3,7 +3,7 @@
     padding: 0;
 }
 .container{
-    background: url("foto/sam1.jpeg ");
+    background:linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url("foto/sam1.jpeg ");
      height: 100vh; 
     background-size: 100% 100%;
 }

@@ -1,56 +1,300 @@
-*{
-    margin: 0;
-    padding: 0;
+/*  import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
-.container{
-    background: url("foto/sam1.jpeg ");
-    background-color: rgba(255, 255, 255, 0.5);
-     height: 100vh; 
-    background-size: 100% 100%;
+.center{
+  width: 100%;
+  position: absolute;
+  top: 50%; /* Dikey olarak %50 konumlandır */
+  left: 50%; /* Yatay olarak %50 konumlandır */
+  transform: translate(-50%, -50%); 
 }
-.container .navbar{
-    width: 100%;
-    height: 79px;
-   
-}
-.navbar .logo{
-    display: inline-block;
-    margin-left: 50px;
-    margin-top: 20px;
-}
-.navbar ul{
-    float: right;
-    margin-right:30px ;
+
+.container .navbar {
+  width: 100%;
+  height: 79px;
 
 }
-.navbar .logo a{
-    text-decoration: none;
-    font-size: 35px;
 
-    color: white;
+.navbar .logo {
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 20px;
 }
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    line-height: 80px;
-   
+
+.navbar ul {
+  float: right;
+  margin-right: 30px;
+
 }
-.navbar ul li a{
-    text-decoration: none;
-     color: white;
-     font-size: 18px;
-    
+
+.navbar .logo a {
+  text-decoration: none;
+  font-size: 35px;
+
+  color: white;
 }
-.navbar ul li a:hover{
-    text-decoration: underline;
-    background: rgb(14, 59, 95);
-    border-radius: 5px;
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  line-height: 80px;
+
 }
+
+.navbar ul li a {
+  text-decoration: none;
+  color:black;
+  font-size: 18px;
+
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+  background: rgb(14, 59, 95);
+  border-radius: 5px;
+}
+
 .container .center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%, -50%);
-    font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+}
+
+.center h1 {
+  margin-top: 50px;
+margin-left: 25%;
+  font-size: 50px;
+  color: #ccc;
+}
+
+/* Slider */
+html {
+  scroll-behavior: smooth;
+}
+/* all similar content styling codes */
+section {
+  padding: 100px 0;
+}
+.skills .maximum-width {
+  background: rgb(216, 214, 214);
+  border-radius: 10px;
+  height: 500px;
+  width: 80%;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.skills {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/school.jpg);
+  height: 90vh;
+  color: rgb(0, 0, 0);
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Poppins", sans-serif;
+}
+
+.skills .skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+section .title::after {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color: rgb(127, 0, 0);
+  padding: 0 5px;
+  background: rgb(216, 214, 214);
+  transform: translateX(-50%);
+}
+
+/* skills section styling */
+
+.skills .skills-content .column {
+  width: calc(50% - 30px);
+}
+.skills .skills-content .left .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.skills .skills-content .left p {
+  color: rgb(5, 0, 0);
+  text-align: justify;
+}
+.skills .skills-content .left .text {
+  font-size: 30px;
+  color: rgb(128, 0, 79);
+}
+.skills .skills-content .left p .skills .skills-content .right .bars {
+  margin-bottom: 20px;
+}
+.skills .skills-content .right .info {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills .skills-content .right span {
+  font-weight: 500;
+  font-size: 18px;
+}
+.skills .skills-content .right .line {
+  height: 5px;
+  width: 100%;
+  background: white;
+  position: relative;
+}
+
+.skills .skills-content .right .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgb(255, 13, 255);
+}
+.skills-content .right .html::before {
+  width: 90%;
+}
+.skills-content .right .css::before {
+  width: 60%;
+}
+.skills-content .right .cplus::before {
+  width: 80%;
+}
+.skills-content .right .js::before {
+  width: 50%;
+}
+.skills-content .right .cs::before {
+  width: 70%;
+}
+
+@media (max-width: 960px) {
+  .skills {
+    height: 125vh;
+  }
+  .skills .maximum-width {
+    height: 685px;
+  }
+  .skills .skills-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 760px) {
+  .skills {
+    height: 130vh;
+  }
+  .skills .maximum-width {
+    height: 780px;
+  }
+}
+
+@media (max-width: 690px) {
+  .maximum-width {
+    padding: 0 23px;
+  }
+}
+
+@media (max-width: 550px) {
+  .skills {
+    height: 130vh;
+  }
+  .skills .title::after {
+    font-size: 15px;
+  }
+  .skills .maximum-width {
+    height: 750px;
+  }
+  .skills .skills-content .left .text {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 550px) {
+  .skills {
+    height: 150vh;
+  }
+  .skills .title::after {
+    font-size: 15px;
+  }
+  .skills .maximum-width {
+    height: 750px;
+  }
+  .skills .skills-content .left .text {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 470px) {
+  .skills {
+    height: 150vh;
+  }
+  .skills .maximum-width {
+    height: 120vh;
+  }
+}
+.basinhakki{
+  width: 100%;
+  height: 100px;
+  background-color: rgb(51, 1, 1);
+}
+
+.basinhakki .dizayn span{
+  color: white;
+}
+.basinhakki .dizayn a{
+  color: yellow;
+  text-decoration: none;
+  display: inline;
+  transition: transform 0.2s;
+}
+.dizayn a {
+  font-size: 16px; /* Normal yazı boyutu */
+  transition: font-size 0.9s;
+}
+.basinhakki .dizayn a:hover{
+  color: rgb(161, 10, 161);
+  transform: scale(1.1);
+  font-size: 18px;
+}
+.dizayn{
+  padding-top: 40px;
+}
+.dizayn i{
+  color: white;
 }

@@ -1,129 +1,175 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.container{
-    background: url("foto/sam1.jpeg ");
-     height: 100vh; 
-    background-size: 100% 100%;
-}
-.container .navbar{
-    width: 100%;
-    height: 79px;
+/* body{
+    background:linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url("foto/sam1.jpeg ");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height:500px ;
+    height: 100vh;
+    
+
+} */
+.container {
+    background-color: white;
+   margin-top: 600px;
    
 }
-.navbar .logo{
+.center{
+    width: 100%;
+    position: absolute;
+    top: 50%; /* Dikey olarak %50 konumlandır */
+    left: 50%; /* Yatay olarak %50 konumlandır */
+    transform: translate(-50%, -50%); 
+}
+
+.container .navbar {
+    width: 100%;
+    height: 79px;
+
+}
+
+.navbar .logo {
     display: inline-block;
     margin-left: 50px;
     margin-top: 20px;
 }
-.navbar ul{
+
+.navbar ul {
     float: right;
-    margin-right:30px ;
+    margin-right: 30px;
 
 }
-.navbar .logo a{
+
+.navbar .logo a {
     text-decoration: none;
     font-size: 35px;
 
     color: white;
 }
-.navbar ul li{
+
+.navbar ul li {
     list-style: none;
     display: inline-block;
     margin: 0 20px;
     line-height: 80px;
-   
+
 }
-.navbar ul li a{
+
+.navbar ul li a {
     text-decoration: none;
-     color: white;
-     font-size: 18px;
-    
+    color: white;
+    font-size: 18px;
+
 }
-.navbar ul li a:hover{
+
+.navbar ul li a:hover {
     text-decoration: underline;
     background: rgb(14, 59, 95);
     border-radius: 5px;
 }
+
 .container .center {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform:translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     font-size: 25px;
 }
-.center h2{
-    margin-top: 80px;
-    margin-bottom: 50px;
-    font-size: 30px;
+
+.center h1 {
+    margin-top: 50px;
+  margin-left: 25%;
+    font-size: 50px;
+    color: #ccc;
 }
- /* Slider */
 
+/* Slider */
 
-.sehir{
-    width:100%;
-    height: 600px ;
-    background-color:white;
+.accordion-header{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.sehir {
+    width: 100%;
+    height: 600px;
+    background-color: white;
     margin: 10px;
     float: left;
     border: 1px solid #ccc;
     overflow: scroll;
     margin-bottom: 20px;
-   
+
+}
+.aciklama{
+    margin-top: 100px;
+    margin-bottom: 200px;
 }
 
-.foto{
-    width:80%;
-    height:350px;
+.foto {
+    width: 80%;
+    height: 350px;
     margin: 15PX;
-    margin-left:35px;
+    margin-left: 35px;
     margin-bottom: 10px;
 }
-.sehir1{
+
+.sehir1 {
     position: relative;
-    width:80%;
+    width: 80%;
     height: 400px;
-    border:none;
+    border: none;
     margin: auto;
     overflow: hidden;
 }
-.sehir2{
+
+.sehir2 {
     position: absolute;
     width: 400%;
-    left:0;
-    animation:slide 28s infinite;
+    left: 0;
+    animation: slide 28s infinite;
     margin-bottom: 20px;
-    
-    
+
+
 }
-.sehir3{
+
+.sehir3 {
     width: 25%;
     float: left;
     margin-bottom: 10px;
 }
-@keyframes slide{
+
+@keyframes slide {
     0% {
         transform: translateX(0px);
     }
+
     10% {
         transform: translateX(-1000px);
     }
+
     20% {
         transform: translateX(-1000px);
     }
+
     30% {
         transform: translateX(-2000px);
     }
+
     40% {
         transform: translateX(-2000px);
     }
+
     50% {
         transform: translateX(-3000px);
     }
+
     60% {
         transform: translateX(-3000px);
     }
+
     /* 70% {
         transform: translateX(-4000px);
     }
@@ -131,36 +177,173 @@
         transform: translateX(-4000px);
     } */
 }
-.sehir1 h3{
-    text-align:center;
+
+.sehir1 h3 {
+    text-align: center;
 }
-.sehir p{
-    font-size:15px;
+
+.sehir p {
+    font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: left;
     margin: 5px;
     margin-top: 10px;
-    
+
 }
-.ilkdiv{
-    width:95%; 
+
+.ilkdiv {
+    width: 95%;
     height: 80%;
-    margin-top:30px; 
+    margin-top: 30px;
     /* margin-left: 100px;  */
     font-size: large;
 }
-.ilkdiv h1{
+
+.ilkdiv h1 {
 
     text-align: center;
     margin-right: 50px;
 }
-.bayrak{
-   margin-top: 200px;
-   margin-bottom: 20px;
-   width: 50%;
-   margin-left: 200px;
+
+.vatan {
+    font-size: 20px;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    margin-left: 200px;
 }
-.bayrak .bayrakfoto a img{
+
+.bayrak {
+    display: inline-block;
+
+    margin-bottom: 20px;
+    width: 50%;
+    margin-left: 200px;
+}
+
+.bayrak .bayrakfoto a img {
     width: 300px;
     height: 300px;
+    display: inline-block;
+}
+
+
+.bayrakfoto {
+    display: inline-block;
+}
+
+
+.yemek img:hover {
+    transform: scale(1);
+    filter: grayscale(100%);
+    transform: scale(0.9);
+}
+
+hr {
+    width: 300px;
+    height: 10px;
+    background-color: red;
+    border: none;
+}
+
+.yemek h1 {
+    font-size: 60px;
+}
+
+.yemek img {
+    width: 275px;
+    height: 175px;
+    margin-right: 50px;
+    /* transition: transform 0.3s ease; */
+    margin-bottom: 10px;
+
+    transition: all 0.5s ease;
+}
+
+.yemek #hitaliyya {
+    height: 240px;
+}
+.ilk{
+    width: 100%;
+}
+.sonraki{
+    width: 100%;
+}
+.yemek{
+    margin-bottom: 150px;
+}
+.basinhakki{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(51, 1, 1);
+}
+
+.basinhakki .dizayn span{
+    color: white;
+}
+.basinhakki .dizayn a{
+    color: yellow;
+    text-decoration: none;
+    display: inline;
+    transition: transform 0.2s;
+}
+.dizayn a {
+    font-size: 16px; /* Normal yazı boyutu */
+    transition: font-size 0.9s;
+}
+.basinhakki .dizayn a:hover{
+    color: rgb(161, 10, 161);
+    transform: scale(1.1);
+    font-size: 18px;
+}
+.dizayn{
+    padding-top: 40px;
+}
+.dizayn i{
+    color: white;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+.accordion-header:hover {
+    background-color: #e0e0e0;
+}
+
+.accordion-content {
+    padding: 10px;
+    display: none;
+}
+
+.toggle-icon {
+    font-size: 20px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.active .toggle-icon {
+    transform: rotate(45deg);
+}
+.accordion{
+width: 40%;
+margin-left: 30%;
+
+}
+.aciklama{
+    width: 100%;
+    justify-items: center;
+    align-items: center;
 }
