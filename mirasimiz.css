@@ -14,6 +14,7 @@
 .container {
     background-color: white;
     margin-top: 600px;
+    width: 100%;
 
 
 }
@@ -76,12 +77,14 @@
     background-color: rgb(207, 202, 202);
     width: 100%;
     place-items: center;
-
 }
-
+.ilkdiv{
+    align-items: center;
+}
 .suriyemiras .yazi {
     justify-content: center;
 margin-bottom: 100px;
+
     h1 {
         color: red;
         font-size: 50px;
@@ -92,6 +95,7 @@ margin-bottom: 100px;
         width: 320px;
         height: 4px;
         background-color: black;
+        justify-content: center;
 
     }
 }
@@ -124,10 +128,10 @@ margin-bottom: 100px;
 #baslik1{
     color: red;
     font-size: 40px;
-    margin-right: 30px;
+text-align: left;
 }
 .baslik{
-    margin-left: 28%; 
+    /* margin-left: 28%;  */
     margin-bottom: 100px;
     margin-top: 50px;
 }
@@ -219,51 +223,61 @@ margin-bottom: 100px;
 .sehir1{
     position: relative;
     width: 400px;
-    height: 300px;
-    border:1px solid #ccc;
+    height: 250px;
     margin: auto;
     overflow: hidden;
+    display: inline-block;
+    margin-left: 900px;
+  
 }
 .sehir2{
     position: absolute;
     width: 400%;
     left:0;
-    animation:slide 30s infinite;
+    animation:slide 28s infinite;
     margin-bottom: 20px;
+   
+}
+.sehir3 a img{
+    display: inline-block;
+    width: 400px;
+    height: 250px;
+    margin-right: 2px;
 }
 .sehir3{
     width: 25%;
     float: left;
     margin-bottom: 10px;
+    
 }
 @keyframes slide{
     0% {
         transform: translateX(0px);
     }
     10% {
-        transform: translateX(-400px);
+        transform: translateX(-440px);
     }
     20% {
-        transform: translateX(-400px);
+        transform: translateX(-440px);
     }
     30% {
-        transform: translateX(-800px);
+        transform: translateX(-840px);
     }
     40% {
-        transform: translateX(-800px);
+        transform: translateX(-840px);
     }
     50% {
-        transform: translateX(-1200px);
+        transform: translateX(-1240px);
     }
     60% {
-        transform: translateX(-1200px);
+        transform: translateX(-1240px);
     }
-    70% {
+    /* 70% {
         transform: translateX(-1600px);
     }
     80% {
         transform: translateX(-1600px);
-    }
+    } */
 }
 .sehir1 h3{
     text-align:center;
@@ -276,16 +290,3 @@ margin-bottom: 100px;
     margin-top: 10px;
     
 }
-.ilkdiv{
-    width:95%; 
-    height: 80%;
-    margin-top:30px; 
-    margin-left: 100px; 
-    font-size: large;
-}
-.ilkdiv h1{
-
-    text-align: center;
-    margin-right: 50px;
-}
-  
