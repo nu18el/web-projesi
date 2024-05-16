@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>İLETİŞİM</title>
     <link rel="stylesheet" href="C:\Users\Mühendis\Desktop\web Prejesi\iletisim.css">
 </head>
+
 <body>
     <div class="container">
         <div class="navbar">
@@ -13,18 +15,100 @@
                 <a href="#">NUSEYBE</a>
             </div>
             <ul>
-                <li><a href="C:\Users\Mühendis\Desktop\web Prejesi\anasayfa.html" >Ana Sayfa</a></li>
-                <li><a href="C:\Users\Mühendis\Desktop\web Prejesi\index.html" >Login</a></li>
-                <li><a href="C:\Users\Mühendis\Desktop\web Prejesi\hakkinda.html">Hakkimda</a></li>
+                <li><a href="C:\Users\Mühendis\Desktop\web Prejesi\anasayfa.html">Ana Sayfa</a></li>
+                <li><a href="C:\Users\Mühendis\Desktop\web Prejesi\index.html">Login</a></li>
                 <li><a href="C:\Users\Mühendis\Desktop\web Prejesi\iletisim.html">İletişim</a></li>
                 <li><a href="C:\Users\Mühendis\Desktop\web Prejesi\cv.html">CV</a></li>
-                <li><a href="C:\Users\Mühendis\Desktop\web Prejesi\sehrim.html" >Şehrim</a></li>
-                <li><a href="C:\Users\Mühendis\Desktop\web Prejesi\mirasimiz.html" >Mirasımız</a></li>
+                <li><a href="C:\Users\Mühendis\Desktop\web Prejesi\sehrim.html">Şehrim</a></li>
+                <li><a href="C:\Users\Mühendis\Desktop\web Prejesi\mirasimiz.html">Mirasımız</a></li>
                 <li><a href="C:\Users\Mühendis\Desktop\web Prejesi\ilgialanlarim.html">İlgi Alanlarım</a></li>
 
 
 
             </ul>
         </div>
+        <center>
+        <div class="form">
+            <br><br><br>
+            <center>
+            <form action="">
+                <table>
+                    <tr>
+                        <td>Ad: </td>
+                        <td><input type="text" name="ad" id="text"required></td>
+                    </tr>
+                    <tr>
+                        <td>Soyad: </td>
+                        <td><input type="text" name="soyad"id="text" required></td>
+                    </tr> 
+                    <tr>
+                        <td>Telefon:</td>
+                        <td><input type="tel" name="telefon"id="text" required></td>
+                    </tr>
+                    <tr>
+                        <td> Email</td>
+                        <td><input type="mail" name="email"id="text" required></td>
+                    </tr>
+                    <tr>
+                        <td>Başlık :</td>
+                        <td><input type="text" list="İlatişim nedeni" id="text" required>
+                            <datalist id="İlatişim nedeni" >
+                                <option value="hata">Sayfada Hata Oluştu</option>
+                                <option value="benimle ilgili">benimle ilgili daha fazla </option>
+                                <option value="diger">Diğer</option>
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cinsiyet:</td>
+                        <td><input type="radio" name="cinsiyet">Kadın</td>
+                        <td><input type="radio" name="cinsiyet">Erkek</td>
+                    </tr>
+                    <tr>
+                        <td>Sitemde en  </td>
+                        <td><input type="checkbox" name="anasayfa" >Anasayfa</td>
+                        <td><input type="checkbox" name="şehrim">Şehrim</td>
+                    </tr>
+                    <tr>
+                        <td>çok</td>
+                        <td><input type="checkbox" name="cv">Cv</td>
+                        <td><input type="checkbox" name="login">Login</td>
+                    </tr>
+                    <tr>
+                        <td>beğendiğini sayfalar:</td>
+                        <td><input type="checkbox" name="miras">Miras</td>
+                        <td><input type="checkbox" name="ilgialanlarım">İlgi Alanlarım</td>
+                    </tr>
+                    <tr>
+                        <td>Mesaj:</td>
+                        <td><textarea name="mesaj"  rows="4" cols="25" id="text"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="GÖNDER" id="gonder"></td>
+                        <td><input type="reset" value="SIFIRLA" id="gonder"></td>
+                    </tr>
+                </table>
+
+            </form>
+        </center>
+        </div></center>
+        <footer>
+            <div class="basinhakki">
+                <center>
+
+                    <div class="dizayn">
+                        <span> Nuseybe Elabdullah </span>
+                        <a href="C:\Users\Mühendis\Desktop\web Prejesi\iletisim.html"> Tarafından dizayn edilmiştir
+                        </a>
+                        <span>|</span>
+                        <i class="fa-regular fa-copyright"></i>
+                        <span>2024 Tüm hakları saklıdır</span>
+                    </div>
+                </center>
+            </div>
+        </footer>
+    </div>
+    
 </body>
+
 </html>

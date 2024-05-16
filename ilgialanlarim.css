@@ -187,6 +187,37 @@ hr {
 .kitap h1{
 font-size: 60px;
 }
+.basinhakki{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(51, 1, 1);
+}
+
+.basinhakki .dizayn span{
+    color: white;
+}
+.basinhakki .dizayn a{
+    color: yellow;
+    text-decoration: none;
+    display: inline;
+    transition: transform 0.2s;
+}
+.dizayn a {
+    font-size: 16px; /* Normal yazı boyutu */
+    transition: font-size 0.9s;
+}
+.basinhakki .dizayn a:hover{
+    color: rgb(161, 10, 161);
+    transform: scale(1.1);
+    font-size: 18px;
+}
+.dizayn{
+    padding-top: 40px;
+}
+.dizayn i{
+    color: white;
+}
+
 
  
 
