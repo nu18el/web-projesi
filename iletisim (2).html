@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ozellik.css">
+    <title>iletişim</title>
+</head>
+<body>
+    
+    <img src="pembe.jpg" class="resim1">
+    <div class="Menu">
+        <h1 class="logo">Meryem Al Refai</h1>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="hakkimda.html">Hakkımda</a></li>
+            <li><a href="sehrim.html">Şehrim</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="mirasimiz.html">Mirasımız</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+            <li><a href="log.html">Login</a></li>
+
+        </ul>
+    </div>
+    <div class="dropdown_menu">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="hakkimda.html">Hakkımda</a></li>
+        <li><a href="sehrim.html">Şehrim</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="mirasimiz.html">Mirasımız</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        <li><a href="log.html">Login</a></li>
+    </div>
+
+    <script>
+        function validateForm() {
+            var x=document.forms["myForm"]["ad"].value;
+            var z=document.forms["myForm"]["soyad"].value;
+            var y=document.forms["myForm"]["telefon"].value;
+            var m=document.forms["myForm"]["mail"].value;
+            var b=document.forms["myForm"]["BÖLÜM"].value;
+            var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+            if(x==""){
+                alert("ADINIZI GIRINIZ LÜtfen");
+                return false;
+            }
+            if(z==""){
+                alert("SOYADINIZI GIRINIZ LÜtfen");
+                return false;
+            }
+            if(y.length!=11 ){
+                alert("telefon numaranız 05 ile başlaması gerek ve 11 haneli olması gerekiyor");
+                return false;
+            }
+            if(m==""){
+                alert("E maili mail formatında giriniz");
+                return false;
+            }
+            if(b==""){
+                alert("Bölümünüzü seçiniz");
+                return false;
+            }
+            
+        }
+    </script>
+
+
+
+
+
+
+
+    <form action="iletisim.php"  name="myForm" onsubmit=" return validateForm()">
+        <h2 class="saam">İLETİŞİM SAYFASI </h2>
+        <div class="iletisim13">
+            <table style="font-size: larger;font-family: cursive;">
+                <tr>
+                    <td>AD : </td>
+                    <td><input type="text" name="ad" > </td>
+                </tr>
+
+
+                <tr><td>SOYADI : </td>
+                    <td><input type="text" name="soyad"> </td>
+                </tr>
+
+
+                <tr><td>TELEFON NO : </td>
+                    <td><input type="text" name="telefon"   > </td>
+                </tr>
+
+
+                <tr><td>EMAIL ADRESI : <br>
+                  <br> BÖLÜM : </td>
+                    <td><input type="text" name="mail"  > <br><br>
+                         <select  name="BÖLÜM">
+                            <option value=" BİLGİSAYAR MÜHENDİSLİĞİ">BİLGİSAYAR MÜHENDİSLİĞİ</option>
+                            <option value="BİLİŞİM SİSTEMLERİ MÜHENDİSLİĞ">BİLİŞİM SİSTEMLERİ MÜHENDİSLİĞ</option>
+                            <option value="YAZILIM MÜHENDİSLİĞİ">YAZILIM MÜHENDİSLİĞİ</option>
+                         </select>
+                    </td>
+                </tr>
+
+
+                <tr>
+                     <td>CINSIYET : </td>
+                     <td>
+                      <input type="radio" id="kadın" name="cınsıyet" value="kadın">
+                      <label for="kadın">KADIN</label>
+                      <input type="radio" id="erkek" name="cınsıyet" value="erkek">
+                      <label for="erkek">ERKEK</label>
+                     </td>
+                </tr>
+                <tr>
+                    <td>FAVORİ PROGRAMLAMA DİLİNİZ : </td>
+                    <td> <input type="checkbox" id="css" name="v" value="css">
+                         <label for="css">css</label>
+                         <input type="checkbox" id="html" name="v" value="html">
+                         <label for="html">HTML</label>
+                        <input type="checkbox" id="c++" name="v" value="c++">
+                         <label for="c++">C++</label>
+                        <input type="checkbox" id="c#" name="v" value="c#">
+                         <label for="c#">C#</label>
+                        <input type="checkbox" id="java" name="v" value="java">
+                         <label for="java">JAVASCRIPT</label>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td><label for="mesaj">Mesaj</label></td>
+                    <td><br><textarea name="mesaj"></textarea><br>
+                        <button type="submit" name="but" >GÖNDER</button>
+                        <input type="reset">
+                    
+                    
+                    </td>
+                </tr>
+                
+            </table>
+            
+        </div>
+    </form>
+
+   
+</body>
+</html>

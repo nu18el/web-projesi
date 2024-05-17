@@ -31,7 +31,7 @@
         <div class="form">
             <br><br><br>
             <center>
-            <form action="">
+            <form action="iletisim1.php"  name="myForm" onsubmit=" return validateForm()">
                 <table>
                     <tr>
                         <td>Ad: </td>
@@ -51,7 +51,7 @@
                     </tr>
                     <tr>
                         <td>Başlık :</td>
-                        <td><input type="text" list="İlatişim nedeni" id="text" required>
+                        <td><input type="text" list="İlatişim nedeni" name="baslik" id="text" required>
                             <datalist id="İlatişim nedeni" >
                                 <option value="hata">Sayfada Hata Oluştu</option>
                                 <option value="benimle ilgili">benimle ilgili daha fazla </option>
@@ -92,6 +92,7 @@
             </form>
         </center>
         </div></center>
+        <br><br><br><br>
         <footer>
             <div class="basinhakki">
                 <center>

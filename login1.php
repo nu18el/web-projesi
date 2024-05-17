@@ -1,3 +1,19 @@
+<?php
+ob_start();
+$user='g231210572';
+$pass='Nuseybe20062005!';
+if(isset($_POST['username'])){
+    $username=$_POST['username'];
+    $password=$_POST['password'];
+    if($username==$user && $password==$pass){
+        echo "hoş geldin g231210572";
+    }
+    else{
+        echo'Hata,Kullanıcı adı veya şifresi hatalıdır';
+    }
+
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,17 +58,17 @@
         </div>
 
     </header>
-    <div class="bgrd">
+    <!-- <div class="bgrd">
         <div class="wrapper">
-            <form action="login1.php" method="post">
+            <form action="">
                 <h1>Login</h1>
                 <div class="input_box"><br>
                     <i class="fa-solid fa-user"></i>
-                    <input type="text" name="KULLANICI ADI" placeholder="User name" required>
+                    <input type="text" name="username" placeholder="User name" required>
                 </div>
                 <div class="input_box"><br>
                     <i class="fa-solid fa-lock"></i>
-                    <input type="password" name="ŞİFRE" placeholder="Password" required>
+                    <input type="password" name="password" placeholder="Password" required>
                 </div>
                 <div class="remember_forget">
                     <label>
@@ -82,7 +98,7 @@
             </div>
         </footer>
 
-    </div>
+    </div> -->
 </body>
 
 </html>
